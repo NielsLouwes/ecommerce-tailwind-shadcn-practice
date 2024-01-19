@@ -1,7 +1,12 @@
+import Header from "@/components/Header";
+import ProductInfoCard from "@/components/ProductInfoCard";
+
 export default function Home() {
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Homepage</h1>
+    <main>
+      <Header /> 
+      <ProductInfoCard company="Sneaker Company" productName="Fall Limited Sneakers" productDescription="These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer." price={125} discount="50%"/>
     </main>
   );
 }
