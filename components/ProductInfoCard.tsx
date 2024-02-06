@@ -6,6 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Button } from "@/components/ui/button"
+import { ButtonWithIcon } from "./ui/ButtonWithIcon";
+
 
 type ProductInfoCardProps = {
   company: string;
@@ -33,12 +36,16 @@ export default function ProductInfoCard({
       </CardHeader>
       <div className="flex">
         <CardContent>
-          <p>{price}</p>
+          <p> $ {price}</p>
         </CardContent>
         <CardFooter>
           <p>{discount}</p>
         </CardFooter>
       </div>
+      <CardContent className="text-gray-300 text-base ">
+          <p> $ {price}</p>
+        </CardContent>
+        <ButtonWithIcon />
     </Card>
   );
 }

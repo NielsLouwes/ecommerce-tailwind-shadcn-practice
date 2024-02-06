@@ -25,7 +25,7 @@ export default function Home() {
       <Header />
       <div className="md:container md:mx-auto flex gap-24 px-8 2xl:px-16 mt-12">
         <div className="flex flex-col">
-          <div className="rounded-md overflow-hidden pt-8 mb-4">
+          <div className="rounded-md overflow-hidden pt-8 mb-8">
             {selectedImage ? (
               <Image
                 src={selectedImage.image}
